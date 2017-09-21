@@ -1,0 +1,56 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+
+class RangeIterator(object, Range):
+    def __init__(self, rg):
+        self.rg = rg
+        self.position = rg.start
+
+    def __next__(self):
+        raise NotImplementedError
+
+
+class Range(object):
+       
+    def __init__(self, *args): # (3, 4, 6)
+        if len(args) not in range(1, 4):
+            raise NotImplementedError
+        elif len(args) == 1:
+            self.start, self.stop, self.step = 0, args[0], 1
+        elif len(args) == 2:
+            self.start, self.stop, self.step = args[0], args[1], 1
+        elif len(args) == 3:
+            self.start, self.stop, self.step = args[0], args[1], args[2]
+        if self.step <= 0:
+            raise ValueError("step can't be < 0")
+        if self.start >= self.stop:
+            raise ValueError("start must be < stop")
+        
+        self.lst = list(range(self.start, self.stop))[::self.step]
+
+    def __iter__(self):
+        for i in self.lst:
+            yield i
+
+    def __repr__(self):
+        return '{}'.format(self.lst)
+
+    def __getitem__(self, key):
+        try:
+            return self.lst[key]
+        except:
+            return 'No object'
+
+    def __len__(self):
+        return len(self.lst)
+
+    def __contains__(self, item):
+        if item in self.lst:
+            return True
+        return False
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
