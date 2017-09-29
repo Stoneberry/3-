@@ -22,49 +22,57 @@ class Game(object):
         return s2
 
 
-    def left_right(self, d, index):
+    def left_right(self, d, index, idx):
         if d[index-1] == '*':
             d[index-1] = '@'
             self.food += 1
+            self.move(d, idx)
         if d[index-1] == '.':
             d[index-1] = '@'
-         
+            self.move(d, idx)
+        
         if d[index+1] == '*':
             d[index+1] = '@'
             self.food += 1
+            self.move(d, idx)
+            
         if d[index+1] == '.':
             d[index+1] = '@'
+            self.move(d, idx)
         return d
 
 
     def up_down(self, idx, index):
         if self.text[idx-1][index] == '.':  # - верхний
             self.text[idx-1][index] = '@'
+            self.move(self.text[idx-1], idx-1)
+            
         if self.text[idx-1][index] == '*':  # - верхний
             self.text[idx-1][index] = '@'
             self.food  += 1
+            self.move(self.text[idx-1], idx-1)
                     
         if self.text[idx+1][index] == '.':  # - верхний
             self.text[idx+1][index] = '@'
+            self.move(self.text[idx+1], idx+1)
+            
         if self.text[idx+1][index] == '*':  # - верхний
             self.text[idx+1][index] = '@'
             self.food  += 1
+            self.move(self.text[idx+1], idx+1)
         return self.text
     
     
     def move(self, d, idx):
         for index, item in enumerate(d):
             if item == '@':
-                a1 = self.left_right(d, index)
+                a1 = self.left_right(d, index, idx)
                 a2 = self.up_down(idx, index)
         return d
 
     def count(self):
         for idx, line in enumerate(self.text):
-            k = 1
-            while k <= len(line):
-                c = self.move(line, idx)
-                k+=1
+            c = self.move(line, idx)
         return 
 
 def path1():
@@ -79,6 +87,7 @@ def answer():
     game = Game(path)
     a1 = game.count()
     print(game.food)
+
 
 if __name__ == "__main__":
     answer()
