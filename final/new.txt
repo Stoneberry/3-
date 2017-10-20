@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Мой дом | Реформа ЖКХ</title>
+
+    <link href="/new/images/favicon.ico" rel="icon">
+    <link rel="shortcut icon" href="/new/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/new/images/favicon.ico" type="image/x-icon">
+    <link href="/new/images/favicon-144x144.png" rel="apple-touch-icon-precomposed" sizes="144x144" />
+    <link href="/new/images/favicon-114x114.png" rel="apple-touch-icon-precomposed" sizes="114x114" />
+    <link href="/new/images/favicon-72x72.png" rel="apple-touch-icon-precomposed" sizes="72x72" />
+    <link href="/new/images/favicon-57x57.png" rel="apple-touch-icon-precomposed" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="360">
+
+    <!--[if lt IE 9]>
+    <script>
+        var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+        for (var i = 0; i < e.length; i++) {
+            document.createElement(e[i]);
+        }
+    </script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/new/css/jquery-ui.min.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/new/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/new/css/custom.css" media="all">
+
+    <script type="text/javascript" src="/new/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/new/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/new/js/chosen.jquery.min.js"></script>
+    <script type="text/javascript" src="/new/js/icheck.min.js"></script>
+    <script type="text/javascript" src="/new/js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="/new/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="/new/js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="/new/js/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="/new/js/scripts.js"></script>
+
+        <script src="/new/js/jquery.validate.min.js"></script>
+                
+</head>
+<body>
+        <div class="page">
+        <div class="top_line"></div>
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="/"><img src="/new/images/logo.png"></a>
+                    <span>Государственная корпорация &mdash; <br>Фонд содействия реформированию <br>жилищно-коммунального хозяйства</span>
+                </div>
+
+                <section class="info">
+                                            <div class="buttons">
+                            <a class="btn light" href="/user/register">Регистрация</a>
+                            <a class="btn light" href="/user/recoverpassword">Забыли пароль?</a>
+                            <a class="btn light" href="" data-modal="auth">Вход</a>
+                        </div>
+                    
+                </section>
+
+                <section class="header_bottom clearfix">
+                    <div class="breadcrumbs">
+                            <a href="/">Главная</a>
+    <span>Мой дом</span>
+                    </div>
+                                                            <div class="location">
+                        <i class="ico map_point"></i>
+                        Вы находитесь
+                        <a href="/myhouse?geo=reset" class="rf_map"></a>
+                                                                                                            </div>
+                </section>
+
+            </div>
+        </header>
+        <section class="navigation wrapper">
+            <nav>
+                                                                        <li>
+                        <a class="active" href="/myhouse">
+                            Мой дом
+                        </a>
+                    </li>
+                                                        <li>
+                        <a class="" href="/mymanager">
+                            Мой управляющий
+                        </a>
+                    </li>
+                                                        <li>
+                        <a class="" href="/relocation">
+                            Переселение граждан
+                        </a>
+                    </li>
+                                                        <li>
+                        <a class="" href="/overhaul">
+                            Капитальный ремонт
+                        </a>
+                    </li>
+                                                        <li>
+                        <a class="" href="/communal-infrastructure">
+                            Коммунальная инфраструктура
+                        </a>
+                    </li>
+                                                        <li>
+                        <a class="" href="/analytics">
+                            Аналитика
+                        </a>
+                    </li>
+                                                        <li>
+                        <a class="" href="/help">
+                            Справка
+                        </a>
+                    </li>
+                            </nav>
+        </section>
+
+        
+        
+    
+    <div class="wrapper">
+    <h1>
+        <span class="float-left">Анкета дома</span>
+        <span class="clearfix" style="padding-left: 16px">
+            <span class="float-left loc_name_ohl width650 word-wrap-break-word">
+                г. Москва, ул. Чертановская, д. 18
+                            </span>
+                        <span class="fr"><form action="/print-queue" method="post" id="post_report_form" style="display: initial">
+    <input type="hidden" name="id" value="7261642">
+    <input type="hidden" name="type" value="mkd-profile-988">
+
+    <a href="http://www.adobe.com/ru/products/reader.html" class="fr cursor-pointer" style="margin-left: 7px;" title="Для просмотра PDF (Adobe Portable Document Format) файлов Вам понадобится программа Adobe® Acrobat® Reader (Программа распространяется бесплатно) Если на Вашем компьютере эта программа не установлена, Вы можете загрузить ее с официального сайта Adobe Systems Incorporated. Для этого нажмите иконку."  target="_blank">
+        <i class="ico adobe_reader"></i>Adobe Reader
+    </a>
+
+    <a class="fr cursor-pointer" data-modal="printWindows"><i class="ico print"></i>Версия для печати</a>
+    <div class="modal_wrap" id="printWindows" style="z-index:1000">
+    <div class="modal" style="width: 400px">
+        <div class="modal_title">Запрос на формирование файла<span class="ico close fr"></span></div>
+        <div class="modal_body">
+            <div class="form" style="font: normal normal 13px/1.25 Arial, Helvetica, Verdana, Tahoma, sans-serif;">
+                <p>Сформированный файл будет направлен на указанный <br /> Вами e-mail в течение 30 минут</p>
+                <div id="error"></div>
+
+                <div id="window1" class="show">
+                    <div class="control_row">
+                        <label>
+                            E-mail:
+                            <span class="red_text">*</span>
+                        </label>
+
+                        <div class="control">
+                            <input class="ui-autocomplete-input" type="text" name="email" maxlength="128" autocomplete="off" size="100" value="">
+                        </div>
+                    </div>
+                    <a class="btn fr" id="send">Отправить</a>
+                </div>
+            </div>
+            <div id="window2" class="hide">
+                <a class="btn close fr">Закрыть</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $('#send').on('click', function () {
+            $(this).closest('form').submit();
+        });
+
+        $('#post_report_form').on('submit', function () {
+            var email = $(this).find('input[name="email"]').val();
+            var error = $('#error').html('');
+            if (!email) {
+                error.html('<div class="msg error"><p>Поле E-mail не должно быть пустым.</p></div>');
+                return false;
+            }
+
+            $.ajax({
+                url: '/print-queue',
+                cache: false,
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    typereport: 'mkd-profile-988',
+                    id: '7261642',
+                    email: email
+                },
+                success: function (data) {
+                    if (data.success) {
+                        $('#window1').removeClass('show').addClass('hide');
+                        $('#window2').removeClass('hide').addClass('show');
+                        $('#error').html('<div class="msg"><p>' + data.message + '</p></div>');
+                    } else {
+                        $('#error').html('<div class="msg error"><p>' + data.message + '</p></div>');
+                    }
+                }
+            });
+
+            return false;
+        });
+
+        $('.close').click(function () {
+            $('#window2').removeClass('show').addClass('hide');
+            $('#window1').removeClass('hide').addClass('show');
+            $('#error').html('');
+        });
+    });
+</script>
+</form>
+</span>
+            <span class="clear-both" style="display: block"></span>
+            <a class="cursor-pointer" data-modal="showAddressChangeLog">История изменения адреса</a>
+        </span>
+    </h1>
+    <div class="modal_wrap" id="showAddressChangeLog" style="z-index:1000">
+    <div class="modal" style="width: auto; max-width: 800px">
+        <div class="modal_title">История изменения адреса дома<span class="ico close fr"></span></div>
+        <div class="modal_body">
+            <ol class="list-address-change-log">
+                                    <li>
+                        <span>г. Москва, ул. Чертановская, д. 18</span>
+                        <small>
+                            с 29.03.2013
+                            по настоящее время
+                        </small>
+                    </li>
+                            </ol>
+            <p style="margin-top: 30px">Внимание: указанные сведения отражают факт изменения адреса в системе</p>
+        </div>
+    </div>
+</div>
+    <section class="house_info clearfix">
+        <div class="fr">
+            <table class="upper_text">
+                <tbody>
+                <tr>
+                    <td>Домом управляет:</td>
+                    <td>
+                                                    <a href="/mymanager/profile/7826699/">
+                                ГБУ г. Москвы &quot;Жилищник района Чертаново Северное
+                            </a>
+                                            </td>
+                </tr>
+                                </tbody>
+            </table>
+            <span class="line"></span>
+
+            <table class="col_list_group">
+                <tr>
+                    <td>
+                        <table class="col_list">
+                            <tbody>
+                                                                    <tr class="left">
+    <td><span>Общая площадь дома, кв.м</span></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <span class="black_text">8 960.20</span>
+    </td>
+</tr>
+<tr class="left">
+    <td><span>Наибольшее количество этажей</span></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <span class="black_text">9</span>
+    </td>
+</tr>
+<tr class="left">
+    <td><span>Год ввода в эксплуатацию</span></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <span class="black_text">1969</span>
+    </td>
+</tr>                                                                <tr class="left">
+    <td><span>Последнее изменение анкеты</span></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td><span class="black_text">
+                            23.06.2016
+                 в 
+                23:04
+                    </span></td>
+</tr>
+<tr class="left">
+    <td><span>Дата начала <br> обслуживания дома</span></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <span class="black_text">
+                    19.05.2012
+                </span>
+    </td>
+</tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="media">
+           <div class="map full" id="map"></div>
+                <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+    window.onload = function () {
+        var mapConfig = {
+            center: [55.626553,37.596094],
+            zoom: 14
+        };
+
+        ymaps.ready(function () {
+            var rgkhMap = new ymaps.Map('map', mapConfig),
+                balloonContentBody = "\u0433. \u041c\u043e\u0441\u043a\u0432\u0430, \u0443\u043b. \u0427\u0435\u0440\u0442\u0430\u043d\u043e\u0432\u0441\u043a\u0430\u044f",
+                balloonContentHeader = "\u0427\u0435\u0440\u0442\u0430\u043d\u043e\u0432\u0441\u043a\u0430\u044f, 18, \u0441\u043e\u043e\u0440\u0443\u0436\u0435\u043d\u0438\u0435 ",
+                balloonContent = '<h3>' + balloonContentHeader + '</h3><p>' + balloonContentBody + '</p>';
+
+            rgkhMap.controls.remove('mapTools')
+                    .remove('geolocationControl')
+                    .remove('searchControl')
+                    .remove('trafficControl')
+                    .remove('rulerControl');
+
+                            var myPlacemark = new ymaps.Placemark(
+                    [55.626553,37.596094],
+                    {balloonContent: balloonContent}
+                );
+                rgkhMap.geoObjects.add(myPlacemark);
+                    });
+    }
+</script>        </div>
+    </section>
+
+
+                    <div class="banners-hide-wrapper">
+        <div class="banners-hide">
+    
+    <div class="banner-hide banner-with-links-location">
+    <div class="banner-title-location">
+        <span class="location_banner" data-span-filter="house"><i id="i_location_banner" class="ico caret2 house down" data-filter="house"></i>Капитальный ремонт</span>
+    </div>
+    <div class='location_banner_div'>
+        <div class="banner-content-location">
+            По данному дому выполнены (запланированы) работы (услуги) по капитальному ремонту общего имущества в многоквартирном доме
+        </div>
+                    <div class="banner-links-location"><a href="#" data-modal="showOverhaulBannerModal">Подробнее</a>
+</div>
+                <div class="modal_wrap" id="showOverhaulBannerModal" style="z-index:1000">
+    <div class="modal">
+        <div class="modal_title">
+            Капитальный ремонт
+            <span class="ico close fr"></span>
+        </div>
+        <div class="modal_body">
+
+            
+                            <div class="modal_sub-title">Реализация региональной программы капитального ремонта общего имущества многоквартирных домов.</div>
+                <table class="modal_table">
+                    <thead>
+                        <tr>
+                            <th>Вид работы (услуги)</th>
+                            <th>Год проведения работы (услуги)</th>
+                            <th>Объем работы (услуги)</th>
+                            <th>Ед. изм.</th>
+                            <th>Индикатор исполнения</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                                <td colspan="4">Нет записей!</td>
+                            </tr>
+                                            </tbody>
+                </table>
+
+                <span class="fr">
+                    <a href="/overhaul/overhaul/services/2837633" class="btn fr">Подробнее</a>
+                </span>
+            
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+        
+    <div class="banner-hide">
+    <div class="banner-title-location">
+        <span class="location_banner" data-span-filter="hotline"><i id="i_location_banner" class="ico caret2 hotline down" data-filter="hotline" ></i>Горячая линия</span>
+    </div>
+    <div class='location_banner_div'>
+        <div class="banner-content-location">
+            Для получения консультации по представленной информации обратитесь на
+Горячую линию Фонда по телефону <strong class="nowrap">8 (800) 700-8989</strong> в рабочие дни с 7 до 18 ч.
+(время московское)
+        </div>
+                    </div>
+</div>
+            </div>
+        </div>
+    
+
+    <div>
+
+    
+    
+    <div>
+        <ul class="tab_labels bordered">
+            <li data-tab-id="tab1" data-link-to="/myhouse/profile/view/7834596/" class="  active ">
+                <a class="no-decoration" href="/myhouse/profile/view/7834596/">Паспорт</a>
+            </li>
+            <li data-tab-id="tab2" data-link-to="/myhouse/profile/management/7834596/" class="">
+                <a class="no-decoration" href="/myhouse/profile/management/7834596/">Управление</a>
+            </li>
+                        <li data-tab-id="tab3" data-link-to="/myhouse/profile/finance/7834596/" class="">
+                <a class="no-decoration" href="/myhouse/profile/finance/7834596/">
+                                            Отчеты по управлению
+                                    </a>
+            </li>
+                        <li data-tab-id="tab4" data-link-to="/myhouse/profile/archive/7834596/" class="">
+                <a class="no-decoration" href="/myhouse/profile/archive/7834596/">История управления (архив анкет)</a>
+            </li>
+            <li data-tab-id="tab5" data-link-to="/myhouse/profile/homebook/7834596/">
+                <a class="no-decoration" href="/myhouse/profile/homebook/7834596/">Домовая книга</a>
+            </li>
+        </ul>
+
+        
+<div class="tab" id="tab1">
+
+    <ul class="subtab_labels">
+        <li data-tab-id="tab1-subtab1">Общие сведения</li>
+        <li data-tab-id="tab1-subtab2">Конструктивные элементы дома</li>
+        <li data-tab-id="tab1-subtab3">Инженерные системы</li>
+        <li data-tab-id="tab1-subtab4">Лифты</li>
+        <li data-tab-id="tab1-subtab5">Приборы учета</li>
+            </ul>
+
+    <div class="subtab" id="tab1-subtab1">
+        <br />
+<div>
+    <div class="numbered">
+        <table class="col_list">
+            <tbody>
+
+                <tr class="left">
+                    <td><b></b><span>Год постройки</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>1969</span></td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Год ввода дома в эксплуатацию</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>1969</span></td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Серия, тип постройки здания</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>II-57</span></td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Тип дома</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>Многоквартирный дом</span></td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Способ формирования фонда капитального ремонта</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>На счете регионального оператора</span></td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Дом признан аварийным</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>Нет</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="colspan">
+                        <b></b><span class="title">Количество этажей:</span>
+                        <table class="col_list">
+                            <tbody>
+                            <tr class="left">
+                                <td><span>наибольшее, ед.</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>9</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>наименьшее, ед.</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>9</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Количество подъездов, ед.</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>5</span></td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Количество лифтов, ед.</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>5</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <table style="margin-bottom: -16px">
+                            <tbody>
+                            <tr class="left" style="background: white">
+                                <td><b></b><span class="title">Количество помещений, в том числе:</span></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: white">
+                                <td></td>
+                                <td><span>179</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="colspan">
+                        <table class="col_list">
+                            <tbody>
+                            <tr class="left">
+                                <td><span>жилых, ед.</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>179</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>нежилых, ед.</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>0</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <table style="margin-bottom: -16px">
+                            <tbody>
+                            <tr class="left" style="background: white">
+                                <td><b></b><span class="title">Общая площадь дома, в том числе, кв.м:</span></td>
+                                <td></td>
+                            </tr>
+                            <tr style="background: white">
+                                <td></td>
+                                <td><span>8 960.20</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="colspan">
+                        <table class="col_list">
+                            <tbody>
+                            <tr class="left">
+                                <td><span>общая площадь жилых помещений, кв.м</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>5 818.30</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>общая площадь нежилых помещений, кв.м</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>0.00</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>общая площадь помещений, входящих в состав общего имущества, кв.м</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>2 895.00</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="colspan">
+                        <b></b><span class="title">Общие сведения о земельном участке, на котором расположен многоквартирный дом:</span>
+                        <table class="col_list">
+                            <tbody>
+                            <tr class="left">
+                                <td><span>площадь земельного участка, входящего в состав общего имущества в многоквартирном доме, кв.м</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>0.00</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>площадь парковки в границах земельного участка, кв.м</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>0.00</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div class="grid">
+                            <table class="">
+                                <colgroup>
+                                    <col width="100%">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th style="text-align:center">Кадастровый номер</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                            <tr>
+                                            <td style="padding: 10px;">Нет данных</td>
+                                        </tr>
+                                                                    </tbody>
+                            </table>
+                        </div>
+                        <br/>
+                    </td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Класс энергетической эффективности</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>B+</span></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="colspan">
+                        <b></b><span class="title">Элементы благоустройства:</span>
+                        <table class="col_list">
+                            <tbody>
+                            <tr class="left">
+                                <td><span>детская площадка</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>Имеется</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>спортивная площадка</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>Имеется</span></td>
+                            </tr>
+                            <tr class="left">
+                                <td><span>другое</span></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><span>Не заполнено</span></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr class="left">
+                    <td><b></b><span>Дополнительная информация</span></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span>Не заполнено</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    </div>
+
+    <div class="subtab" id="tab1-subtab2">
+        <br />
+<h4>Фундамент</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип фундамента</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+                Ленточный
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Стены и перекрытия</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип перекрытий</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+                 Железобетонные
+            </span></td>
+        </tr>
+
+        <tr class="left">
+            <td><b></b><span>Материал несущих стен</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+                 Панельные
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Подвал</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Площадь подвала по полу, кв.м</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+                1 333.00
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<h4>Мусоропроводы</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип мусоропровода</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+                На лестничной клетке
+            </span></td>
+        </tr>
+
+        <tr class="left">
+            <td><b></b><span>Количество мусоропроводов, ед.</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+                5
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Фасады</h4>
+<br/>
+<div class="grid">
+    <table class="orders overhaul-services-table">
+        <thead>
+        <tr>
+            <th style="text-align: center">Тип фасада</th>
+        </tr>
+        </thead>
+                    <tbody data-service-date="houseAdditionalDevice_254">
+            <tr>
+                <td class="">Оштукатуренный</td>
+            </tr>
+            </tbody>
+            </table>
+</div>
+<br />
+<h4>Крыши</h4>
+<br/>
+<div class="grid">
+    <table class="orders overhaul-services-table">
+        <thead>
+        <tr>
+            <th style="text-align: center">Тип крыши </th>
+            <th style="text-align: center">Тип кровли</th>
+        </tr>
+        </thead>
+                    <tbody data-service-date="houseRoofType_2 118 477">
+            <tr>
+                <td class="">Плоская</td>
+                <td class="">Мягкая (наплавляемая) крыша</td>
+            </tr>
+            </tbody>
+            </table>
+</div>
+<br />
+<h4>Иное оборудование / конструктивный элемент</h4>
+<br/>
+<div class="grid">
+    <table class="orders overhaul-services-table">
+        <thead>
+        <tr>
+            <th style="text-align: center">Вид оборудования / конструктивного элемента</th>
+            <th style="text-align: center">Описание дополнительного оборудования / конструктивного элемента</th>
+        </tr>
+        </thead>
+                    <tr>
+                <td colspan="2" style="text-align: center">Нет данных</td>
+            </tr>
+            </table>
+</div>
+    </div>
+
+    <div class="subtab" id="tab1-subtab3">
+        <br />
+<h4>Система электроснабжения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы электроснабжения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Центральное
+            </span></td>
+        </tr>
+
+        <tr class="left">
+            <td><b></b><span>Количество вводов в дом, ед.</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               1
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система теплоснабжения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы теплоснабжения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Центральное
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система горячего водоснабжения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы горячего водоснабжения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Центральное (закрытая система)
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система холодного водоснабжения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы холодного водоснабжения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Центральное
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система водоотведения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы водоотведения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Центральное
+            </span></td>
+        </tr>
+
+        <tr class="left">
+            <td><b></b><span>Объем выгребных ям, куб. м.</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               0.00
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система газоснабжения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы газоснабжения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Центральное
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система вентиляции</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы вентиляции</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Приточно-вытяжная вентиляция
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система пожаротушения</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы пожаротушения</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Пожарные гидранты
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<h4>Система водостоков</h4>
+<div class="numbered">
+    <table class="col_list">
+        <tbody>
+
+        <tr class="left">
+            <td><b></b><span>Тип системы водостоков</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span>
+               Внутренние водостоки
+            </span></td>
+        </tr>
+
+        </tbody>
+    </table>
+</div>
+    </div>
+
+    <div class="subtab" id="tab1-subtab4">
+        <br />
+
+    <div class="grid">
+        <table class="orders overhaul-services-table">
+            <thead>
+            <tr>
+                <th class="width100" style="text-align: center">Номер лифта</th>
+                <th>Номер подъезда</th>
+                <th>Тип лифта</th>
+                <th>Год ввода в эксплуатацию</th>
+            </tr>
+            </thead>
+                            <tbody>
+                <tr>
+                    <td style="text-align: center">1</td>
+                    <td>1</td>
+                    <td style="text-align: left">Пассажирский</td>
+                    <td>1969</td>
+                </tr>
+                </tbody>
+                            <tbody>
+                <tr>
+                    <td style="text-align: center">2</td>
+                    <td>2</td>
+                    <td style="text-align: left">Пассажирский</td>
+                    <td>1969</td>
+                </tr>
+                </tbody>
+                            <tbody>
+                <tr>
+                    <td style="text-align: center">3</td>
+                    <td>3</td>
+                    <td style="text-align: left">Пассажирский</td>
+                    <td>1969</td>
+                </tr>
+                </tbody>
+                            <tbody>
+                <tr>
+                    <td style="text-align: center">4</td>
+                    <td>4</td>
+                    <td style="text-align: left">Пассажирский</td>
+                    <td>1969</td>
+                </tr>
+                </tbody>
+                            <tbody>
+                <tr>
+                    <td style="text-align: center">5</td>
+                    <td>5</td>
+                    <td style="text-align: left">Пассажирский</td>
+                    <td>1969</td>
+                </tr>
+                </tbody>
+                    </table>
+    </div>
+    </div>
+
+    <div class="subtab" id="tab1-subtab5">
+        <br />
+<div class="grid">
+    <table class="orders overhaul-services-table">
+        <colgroup>
+            <col width="304">
+            <col width="129">
+            <col width="200">
+            <col width="175">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Вид коммунальной услуги</th>
+                <th>Наличие прибора учета</th>
+                <th>Единица измерения</th>
+                <th style="width: 300px">Дата ввода в эксплуатацию</th>
+                <th></th>
+            </tr>
+        </thead>
+                <tbody>
+            <tr>
+                <td>Газоснабжение</td>
+                                    <td colspan="3" style="text-align: center">Отсутствует, требуется установка</td>
+                                <td class="toggle">
+                                    </td>
+            </tr>
+
+            <tr class="collapsible" style="display: none;">
+                <td colspan="4">
+                    <div>
+                        <table class="col_list">
+                            <tbody>
+                                <tr class="left">
+                                    <td><span>Тип прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>Не заполнено</span></td>
+                                </tr>
+                                <tr class="left">
+                                    <td><span>Дата поверки / замены прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>Не заполнено</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+                <tbody>
+            <tr>
+                <td>Отопление</td>
+                                    <td style="text-align: left">Установлен</td>
+                    <td style="text-align: left">Гкал</td>
+                    <td>10.04.2010</td>
+                                <td class="toggle">
+                                        <span class="">Подробнее</span>
+                                    </td>
+            </tr>
+
+            <tr class="collapsible" style="display: none;">
+                <td colspan="4">
+                    <div>
+                        <table class="col_list">
+                            <tbody>
+                                <tr class="left">
+                                    <td><span>Тип прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>С интерфейсом передачи данных</span></td>
+                                </tr>
+                                <tr class="left">
+                                    <td><span>Дата поверки / замены прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>10.04.2017</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+                <tbody>
+            <tr>
+                <td>Электроснабжение</td>
+                                    <td style="text-align: left">Установлен</td>
+                    <td style="text-align: left">кВт</td>
+                    <td>10.04.2010</td>
+                                <td class="toggle">
+                                        <span class="">Подробнее</span>
+                                    </td>
+            </tr>
+
+            <tr class="collapsible" style="display: none;">
+                <td colspan="4">
+                    <div>
+                        <table class="col_list">
+                            <tbody>
+                                <tr class="left">
+                                    <td><span>Тип прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>Без интерфейса передачи данных</span></td>
+                                </tr>
+                                <tr class="left">
+                                    <td><span>Дата поверки / замены прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>10.04.2017</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+                <tbody>
+            <tr>
+                <td>Водоотведение</td>
+                                    <td colspan="3" style="text-align: center">Отсутствует, установка не требуется</td>
+                                <td class="toggle">
+                                    </td>
+            </tr>
+
+            <tr class="collapsible" style="display: none;">
+                <td colspan="4">
+                    <div>
+                        <table class="col_list">
+                            <tbody>
+                                <tr class="left">
+                                    <td><span>Тип прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>Не заполнено</span></td>
+                                </tr>
+                                <tr class="left">
+                                    <td><span>Дата поверки / замены прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>Не заполнено</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+                <tbody>
+            <tr>
+                <td>Горячее водоснабжение</td>
+                                    <td style="text-align: left">Установлен</td>
+                    <td style="text-align: left">куб.м</td>
+                    <td>10.04.2010</td>
+                                <td class="toggle">
+                                        <span class="">Подробнее</span>
+                                    </td>
+            </tr>
+
+            <tr class="collapsible" style="display: none;">
+                <td colspan="4">
+                    <div>
+                        <table class="col_list">
+                            <tbody>
+                                <tr class="left">
+                                    <td><span>Тип прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>С интерфейсом передачи данных</span></td>
+                                </tr>
+                                <tr class="left">
+                                    <td><span>Дата поверки / замены прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>10.04.2017</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+                <tbody>
+            <tr>
+                <td>Холодное водоснабжение</td>
+                                    <td style="text-align: left">Установлен</td>
+                    <td style="text-align: left">куб.м</td>
+                    <td>10.04.2010</td>
+                                <td class="toggle">
+                                        <span class="">Подробнее</span>
+                                    </td>
+            </tr>
+
+            <tr class="collapsible" style="display: none;">
+                <td colspan="4">
+                    <div>
+                        <table class="col_list">
+                            <tbody>
+                                <tr class="left">
+                                    <td><span>Тип прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>Без интерфейса передачи данных</span></td>
+                                </tr>
+                                <tr class="left">
+                                    <td><span>Дата поверки / замены прибора учета</span></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><span>10.04.2017</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+            </table>
+</div>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+        </div>
+    </div>
+    <section class="wrapper partners">
+        <div>
+            <a href="/away?to=www.minstroyrf.ru" style="width: 170px; margin-right: 29px;">
+                    <span style="margin-right: 14px;">
+                        <img class="active" src="/new/images/partner-logo1-active.png">
+                        <img src="/new/images/partner-logo1.png">
+                    </span>
+                <span>Министерство <br>строительства и ЖКХ Российской Федерации</span>
+            </a>
+            <a href="/away?to=www.ach.gov.ru%2Fru%2F" style="width: 175px; margin-right: 34px;">
+                    <span style="margin-right: 22px;">
+                        <img class="active" src="/new/images/partner-logo3-active.png">
+                        <img src="/new/images/partner-logo3.png">
+                    </span>
+                <span>Счетная палата <br> Российской Федерации</span>
+            </a>
+            <a href="/away?to=www.fas.gov.ru" style="width: 180px; margin-right: 29px;">
+                    <span style="margin-right: 28px;">
+                        <img class="active" src="/new/images/partner-logo4-active.png">
+                        <img src="/new/images/partner-logo4.png">
+                    </span>
+                <span>Федеральная антимонопольная служба</span>
+            </a>
+            <a href="/away?to=http://vokrugjeka.ru/" style="width: 185px; margin-right: 13px;">
+                    <span style="margin-right: 14px;">
+                        <img class="active" src="/new/images/vokrug-hover.png">
+                        <img src="/new/images/vokrug-black.png">
+                    </span>
+                <span>Вокруг ЖэКа: Журнал про жизнь и для жизни</span>
+            </a>
+            <a href="/away?to=gkhrazvitie.ru" style="width: 165px; margin-right: 42px;">
+                    <span style="margin-right: 25px;">
+                        <img class="active" src="/new/images/partner-logo7-active.png">
+                        <img src="/new/images/partner-logo7.png">
+                    </span>
+                <span>Некоммерческое партнерство <br> «ЖКХ Развитие»</span>
+            </a>
+            <a href="/away?to=fondgkh.ru" style="width: 170px; margin-right: 29px;">
+                    <span style="margin-right: 10px;">
+                        <img class="active" src="/new/images/partner-logo8-active.png">
+                        <img src="/new/images/partner-logo8.png">
+                    </span>
+                <span>ГК-Фонд содействия реформированию ЖКХ</span>
+            </a>
+            <a href="/away?to=svalki.net" style="width: 170px; margin-right: 36px;">
+                    <span style="margin-right: 10px;">
+                        <img class="active" src="/new/images/util-active-logo.png">
+                        <img src="/new/images/util-inactive-logo.png">
+                    </span>
+                <span>Национальное бюро по переработке отходов</span>
+            </a>
+            <a href="/away?to=svalki.net" style="width: 170px; margin-right: 0;">
+                    <span style="margin-right: 20px;">
+                        <img class="active" src="/new/images/swalki-active-logo.png">
+                        <img src="/new/images/swalki-inactive-logo.png">
+                    </span>
+                <span>SVALKI.NET портал об обращении с отходами</span>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div>
+                Вопросы по работе сайта можно задать <br> по телефону Горячей линии Фонда <span class="black_text nowrap">8 (800) 700-8989</span> в рабочие дни с 7 до 18 ч. (время московское).
+            </div>
+            <div>
+                <!-- Yandex.Metrika informer -->
+                <a href="https://metrika.yandex.ru/stat/?id=25306409&from=informer" target="_blank" rel="nofollow">
+                    <img src="https://bs.yandex.ru/informer/25306409/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"   style="width:88px; height:31px; border:0;"
+                         alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+                         onclick="try{Ya.Metrika.informer({i:this,id:25306409,lang:'ru'});return false}catch(e){}"/>
+                </a>
+                <!-- /Yandex.Metrika informer -->
+                <br>
+                <span id="visitor_message_outer">Вы <strong id="visitor" class="black_text">19 756 666</strong> посетитель</span>
+            </div>
+            <div>
+                <p>Почтовый адрес: <span class="black_text">115088, г. Москва, <br />ул. Шарикоподшипниковская, д. 5</span></p>
+                <p>Телефон: <span class="black_text nowrap">8 (800) 700-8989</span> </p>
+            </div>
+            <div>
+                &copy; 2008-2017 ГК &mdash; Фонд содействия реформированию жилищно - коммунального хозяйства
+            </div>
+            <div class="last">
+                <a href="/about">О проекте</a><br>
+                <a href="/condition">Условия</a><br>
+                <a href="/api">Интеграция</a>
+                <a href="http://webinar.reformagkh.ru" target="_blank">Вебинары Фонда</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal_wrap free" id="auth">
+    <div class="modal w270">
+        <div class="modal_title">Вход <span class="ico close fr"></span></div>
+        <div class="modal_body">
+            <form action="/user/login" method="post">
+                <div class="form">
+                    <div class="control_row">
+                        <label for="identity">Эл. адрес или логин: </label>
+                        <div class="control">
+                            <input id="identity" type="text" name="identity" />
+                        </div>
+                    </div>
+                    <div class="control_row">
+                        <label for="credential">Пароль: </label>
+                        <div class="control">
+                            <input id="credential" type="password" name="credential" />
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <button type="submit" class="btn fr">Войти</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>                <div class="popover" id="popover-temporary-address">
+        <p>
+            Временный адрес.<br>
+            Указанный адрес отсутствует в Федеральной информационной адресной системе (ФИАС).
+            Данная отметка будет снята после регистрации адреса в ФИАС.
+        </p>
+    </div>
+            <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter25306409 = new Ya.Metrika({id:25306409,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/25306409" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+            <script type="text/javascript">
+            (function(d, t, p) {
+                var j = d.createElement(t); j.async = true; j.type = "text/javascript";
+                j.src = ("https:" == p ? "https:" : "http:") + "//stat.sputnik.ru/cnt.js";
+                var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(j, s);
+            })(document, "script", document.location.protocol);
+        </script>
+    </body>
+</html>
