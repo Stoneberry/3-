@@ -5,7 +5,7 @@ import sys
 import re
 import urllib.request
 import urllib.parse
-import csv
+#import csv
 from bs4 import BeautifulSoup, SoupStrainer
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -26,9 +26,6 @@ class AddressInfo:
 
 
 class TableHouse:
-
-    def __init__(self, html):
-        self.dataFrame = self.table(html)
 
     def clean(self, x):
         cleaned = re.sub('\n|                |            ', '', x)
