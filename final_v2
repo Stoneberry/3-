@@ -1,0 +1,266 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import sys
+import re
+import urllib.request
+import urllib.parse
+from bs4 import BeautifulSoup, SoupStrainer
+from bs4 import BeautifulSoup
+import pandas as pd
+from lxml import etree
+from lxml import html
+import os
+
+
+class AddressInfo:
+    """
+        В этом классе хранится адрес, который передал пользователь.
+        Переданный адрес формируется в единую строку через разделитель +.
+    """
+    def __init__(self, *args):
+        self.adress = ''
+        for index, item in enumerate(args):
+            if index == len(args) - 1:
+                self.adress += '{}'.format(item)
+            else:
+                self.adress += '{}+'.format(item)
+
+
+class PasportHtml_methods:
+    """
+       Методы для класса PasportHtml_methods.
+    """
+    def _clean(self, x):
+        """
+           Очищает строки от лишних пробелов и переносов строк.
+        """
+        cleaned_x = re.sub('\n|                |            ', '', x)
+        return cleaned_x
+
+    def get_numbered_table(self, child, questions, answers):
+        """
+           Работает с таблицей, состоящей из двух колонок,
+           где наименования выделены с помощью класса left.
+        """
+        left_class = child.find_class("left")
+
+        for line in left_class:
+
+            for i in line.getchildren():
+                if i.text_content() != '':
+                    if i.text_content() not in questions:
+                        questions.append(self._clean(i.text_content()))
+
+            for k in line.getnext():
+                if k.text_content() != '':
+                    answers.append(self._clean(k.text_content()))
+
+        grid_class = child.find_class("grid")
+        if grid_class != []:
+            for grid in grid_class:
+                self.get_grid_table(grid)
+
+    def get_tag_thead(self, simbling, ques):
+        """
+           Достает информацию из тега thead.
+        """
+        for tr in simbling.getchildren():
+            for th in tr:
+                if th.tag == 'th':
+                    ques.append(self._clean(th.text_content()))
+
+    def get_tag_tbody(self, simbling, q, a, ans, ques):
+        """
+           Достает информацию из тега tbody
+           Если параметров меньше, чем заявленных названий столбцов,
+           то последний множится и заполняет пустые клетки.
+        """
+        for tr in simbling.getchildren():
+            tr.classes
+
+            if tr.get('class') == "collapsible":
+                self.get_numbered_table(tr, q, a)
+            else:
+                for td in tr:
+                    if td.tag == 'td':
+                        ans.append(self._clean(td.text_content()))
+                if len(tr) < len(ques):
+                    ans += [ans[-1]]*(len(ques) - len(tr))
+
+    def get_tag_tr(self, simbling, ans):
+        """
+           Достает информацию из тега tr.
+        """
+        for td in simbling.getchildren():
+            if td.tag == 'td':
+                ans.append(self._clean(td.text_content()))
+
+    def add_nested_ques_ans(self, ques, a, ans, q):
+        """
+           Если в таблице есть другие вложенные таблицы,
+           то информация из этих таблиц будет добавлена к
+           основной таблице.
+        """
+        ques_len = len(ques)
+        i = 0
+        while i < len(a):
+            ans.insert(ques_len, a[i])
+            ans.insert(ques_len + 1, a[i + 1])
+            i += 2
+            ques_len += len(ques) + 2
+        ques += q
+
+    def make_dict_of_table_info(self, ques, d, ans):
+        """
+           Формирование словаря, где ключом является название столбца,
+           а значением - параметры этого столбика.
+        """
+        for index, item in enumerate(ques):
+            d[item] = []
+            i = index
+            while i < len(ans):
+                d[item].append(ans[i])
+                i += len(ques)
+
+    def get_grid_table(self, child):
+        """
+        Работает с таблицей, состоящей из нескольких колонок
+        с заранее определенными названиями столбцов.
+        Программа ходит по деревьям страницы и достает всю неободимую
+        информацию,далее разбивает все на колонки и записывает в словарь.
+        """
+        for line in child.getchildren():
+
+            d = {}
+
+            ques = []  # questions
+            ans = []  # answers
+
+            q = []  # questions
+            a = []  # answers
+
+            for simbling in line.getchildren():
+
+                if simbling.tag == 'thead':
+                    self.get_tag_thead(simbling, ques)
+
+                elif simbling.tag == 'tbody':
+                    self.get_tag_tbody(simbling, q, a, ans, ques)
+
+                elif simbling.tag == 'tr':
+                    self.get_tag_tr(simbling, ans)
+
+            if a != 0:
+                self.add_nested_ques_ans(ques, a, ans, q)
+
+            if len(ques) != 0:
+                if len(ques) > len(ans):
+                    ans += [ans[-1]]*(len(ques) - len(ans))
+
+                self.make_dict_of_table_info(ques, d, ans)
+                yield d
+
+
+class TableHouse(PasportHtml_methods):
+    """
+       Класс разбирает html паспорта дома и преобразует полученную информацию
+       в таблицу и записывает в файлы.
+    """
+    def make_numbered_table(self, questions, answers, adress='Table'):
+        """
+           Запись в файл таблицы вида numbered_table.
+        """
+        df = pd.DataFrame({'Наименования': questions, 'Параметры': answers})
+        df.to_csv(adress + '.csv', mode='a', encoding='utf-8')
+
+    def make_grid_table(self, table, num, adress='Table'):
+        """
+           Запись в файл таблицы вида grid_table.
+        """
+        df2 = pd.DataFrame(table)
+        df2.to_csv(adress + '_' + str(num) + '.csv', mode='a',
+                   encoding='utf-8')
+
+    def get_tables(self, html_pas, table_name, adress=None):
+        """
+           Разбирает html паспорта дома.
+        """
+        tree = html.fromstring(html_pas)
+        tab = tree.get_element_by_id(table_name)
+
+        num = 0
+
+        for chld in tab.getchildren():
+            chld.classes
+
+            questions = []
+            answers = []
+
+            if chld.get('class') == "subtab":
+
+                for child in chld.getchildren():
+                    child.classes
+
+                    if child.get('class') == "numbered":
+                        self.get_numbered_table(child, questions, answers)
+
+                    for i in child.getchildren():
+                        i.classes
+                        if i.get('class') == "numbered":
+                            self.get_numbered_table(i, questions, answers)
+
+                    if child.get('class') == "grid":
+                        for i in self.get_grid_table(child):
+                            num += 1
+                            self.make_grid_table(i, num, adress)
+
+                if questions != []:
+                    self.make_numbered_table(questions, answers, adress)
+
+
+class HouseInfo(AddressInfo, TableHouse):
+    """
+       Проверяет есть ли в базе дом с указанным адресом,
+       скачивает паспорт дома.
+    """
+    main_link = 'https://www.reformagkh.ru'
+
+    def search_house(self):
+        """
+           Скачивает html страницы результата поиска.
+        """
+        link = HouseInfo.main_link + '/search/houses?query='
+        link += urllib.parse.quote_plus(self.adress)
+        with urllib.request.urlopen(link) as response:
+            html = response.read().decode('utf-8')
+        return html
+
+    def get_pasport_html(self, html):
+        """
+           Скачивает html паспорта дома.
+        """
+        soup = BeautifulSoup(html, "lxml")
+        for link in soup.find_all('a'):
+            if 'г. Москва,' in link.get_text() or 'обл. Московская,'\
+                    in link.get_text():
+                self.adress = link.get_text()
+                page = urllib.request.urlopen(HouseInfo.main_link +
+                                              link.get('href'))
+                html_pas = page.read().decode('utf-8')
+                yield html_pas
+
+
+def main():
+    if len(sys.argv) < 3:
+        raise ValueError('Enter correct arguments:')
+    else:
+        house = HouseInfo(*sys.argv[1:])
+        results = house.search_house()
+        for home in house.get_pasport_html(results):
+            house.get_tables(home, 'tab1', house.adress)
+        return
+
+
+if __name__ == "__main__":
+    main()
